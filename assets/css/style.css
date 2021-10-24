@@ -15,22 +15,17 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* HEADER / NAV BAR STYLES START */
-
+/* START - header and header items */
 header {
   padding: 20px 35px;
   background-color: rgb(54, 31, 31);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /*position: sticky;
-  position: -webkit-sticky;*/
   top: 0;
-  /*z-index: 9999;*/
   background-image: url('../images/fernand-de-canne-Unl-fQ1_P5Q-unsplash.jpg');
   background-size: cover;
   background-attachment: fixed;
-  /*background-position: 80%;*/
 }
 
 header h1 {
@@ -53,7 +48,6 @@ header nav {
 header nav ul {
   display: flex;
   flex-wrap: wrap;
-  /*justify-content: space-between;*/
   justify-content:center;
   align-items:center;
   list-style-type: none;
@@ -63,12 +57,10 @@ header nav ul > * {
   margin: 1em 0;
 }
 
-
 header nav ul li a {
   padding: 10px 15px;
   font-weight:lighter;
   font-size:large;
-  /*font-size: 1.55vw;*/
 }
 
 header nav ul li a:hover {
@@ -77,9 +69,9 @@ header nav ul li a:hover {
   border-radius: 15px;
   text-shadow: none;
 }
+/* END - header and header items */
 
-/* HEADER / NAVBAR STYLES END */
-
+/* START - hero and hero items */
 .hero {
   display: flex;
   background-image: url('../images/fernand-de-canne-Unl-fQ1_P5Q-unsplash.jpg');
@@ -95,27 +87,9 @@ header nav ul li a:hover {
   justify-content:center;
   padding: 20px;
 }
+/* END - hero and hero items */
 
-/*.section-title {
-  font-size: 48px;
-  border-right: 3px solid;
-  color: var(--secondary-color);
-  padding-right: 20px;
-  padding-top: 100px;
-  text-align: left;
-  margin: 0 auto 35px auto;
-  width: 20%;
-}
-
-.primary-border {
-  border-color: var(--primary-color);
-  right: auto;
-}
-
-.secondary-border {
-  border-color: var(--tertiary-color);
-}*/
-
+/* START - flexbox "About Me" items */
 .flex-about {
   display: flex;
 }
@@ -145,7 +119,9 @@ header nav ul li a:hover {
 .flex-about-right p {
   color: black;
 }
+/* END - flexbox "About Me" items */
 
+/* START - flexbox "Projects" items */
 .flex-projects {
   display: flex;
   justify-content: left; 
@@ -190,34 +166,9 @@ header nav ul li a:hover {
   margin: 10px;
   padding: 10px;
 }
-/*
-.flex-resume {
-  display: flex;
-  justify-content: left; 
-}
+/* END - flexbox "Projects" items */
 
-.flex-resume-left {
-  flex: 1;
-  color: var(--tertiary-color);
-  border-right: 6px solid var(--secondary-color);
-  margin-right: 10px;
-  background-color: rgba(252,225,56, 0.25);
-  border-bottom: 6px solid var(--secondary-color);
-}
-
-.flex-resume-left h2 {
-  padding-top: 10px;
-  text-align: center;
-}
-
-.flex-resume-right {
-  flex: 2;
-  border-radius: 6px;
-  background-color: rgba(252,225,56, 0.25);
-  margin: 10px;
-  padding: 10px;
-}
-*/
+/* START - flexbox "Contact" items */
 .flex-contact {
   display: flex;
   justify-content: left; 
@@ -229,7 +180,6 @@ header nav ul li a:hover {
   border-right: 6px solid var(--secondary-color);
   margin-right: 10px;
   background-color: rgba(252,225,56, 0.25);
-  /*border-bottom: 6px solid var(--secondary-color);*/
 }
 
 .flex-contact-left h2 {
@@ -254,7 +204,9 @@ footer {
   flex-wrap: wrap;
   top: 0;
 }
+/* END - flexbox "Contact" items */
 
+/* START - media queries to make site responsive to cell phones */
 @media screen and (max-width: 575px) {
   header {
     justify-content: center;
@@ -264,3 +216,4 @@ footer {
     justify-content: center;
   }
 }
+/* END - media queries to make site responsive to cell phones */
