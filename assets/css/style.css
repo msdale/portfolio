@@ -23,9 +23,6 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   top: 0;
-  background-image: url('../images/fernand-de-canne-Unl-fQ1_P5Q-unsplash.jpg');
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 header h1 {
@@ -33,7 +30,7 @@ header h1 {
   margin: 0;
   font-size: 36px;
   color: var(--primary-color);
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding-top: 10px;
 }
 
 header a {
@@ -77,10 +74,10 @@ header nav ul li a:hover {
   background-image: url('../images/fernand-de-canne-Unl-fQ1_P5Q-unsplash.jpg');
   background-size: cover;
   justify-content: center;
-  align-items: flex-start;
-  height: 1200px;
+  height: 600px;
   background-attachment:scroll;
   background-position: 44%;
+  background-repeat: no-repeat;
 }
 
 .hero h1 {
@@ -198,7 +195,7 @@ header nav ul li a:hover {
 
 footer {
   padding: 20px 35px;
-  background-color: rgb(54, 31, 31);;
+  background-color: rgb(54, 31, 31);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -210,6 +207,15 @@ footer {
 @media screen and (max-width: 575px) {
   header {
     justify-content: center;
+  }
+
+  header h1 {
+    padding-bottom: 10px;
+  }
+
+  header nav {
+    align-items: center;
+    padding-bottom: 20px;
   }
 
   hero h1 {
