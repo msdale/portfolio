@@ -96,13 +96,14 @@ header nav ul li a:hover {
   color: var(--tertiary-color);
   border-right: 6px solid var(--secondary-color);
   margin-right: 10px;
+  max-width: 300px;
   background-color: rgba(252,225,56, 0.25);
-  border-bottom: 6px solid var(--secondary-color);
 }
 
 .flex-about-left h2 {
   padding-top: 10px;
-  text-align: center;
+  text-align: right;
+  padding-right: 10px; /* added */
 }
 
 .flex-about-right {
@@ -129,32 +130,16 @@ header nav ul li a:hover {
   color: var(--tertiary-color);
   border-right: 6px solid var(--secondary-color);
   margin-right: 10px;
+  max-width: 300px;
   background-color: rgba(252,225,56, 0.25);
-  border-bottom: 6px solid var(--secondary-color);
 }
 
 .flex-projects-left h2 {
   padding-top: 10px;
-  text-align: center;
+  text-align: right;
+  padding-right: 10px; /* added */
 }
 
-.flex-projects-right ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items:stretch;
-  align-content: space-between;
-  list-style-type: none;
-}
-
-.flex-projects-right ul li a img {
-  max-width: 100%;
-  height: auto;
-}
-
- .flex-projects-right ul > * {
-   margin: 1em 0;
-}
 
 .flex-projects-right {
   flex: 2;
@@ -162,6 +147,29 @@ header nav ul li a:hover {
   background-color: rgba(252,225,56, 0.25);
   margin: 10px;
   padding: 10px;
+}
+
+.flex-projects-right h4 {
+  padding-left: 10px;
+}
+
+.flex-projects-right ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items:stretch;
+  align-content: space-between;
+  list-style-type: none;
+}
+
+.flex-projects-right ul li a img {
+  max-width: 100%;
+  padding-left: 10px;
+  height: auto;
+}
+
+.flex-projects-right ul > * {
+   margin: 1em 0;
 }
 /* END - flexbox "Projects" items */
 
@@ -176,12 +184,14 @@ header nav ul li a:hover {
   color: var(--tertiary-color);
   border-right: 6px solid var(--secondary-color);
   margin-right: 10px;
+  max-width: 300px;
   background-color: rgba(252,225,56, 0.25);
 }
 
 .flex-contact-left h2 {
   padding-top: 10px;
-  text-align: center;
+  text-align: right;
+  padding-right: 10px; /* added */
 }
 
 .flex-contact-right {
@@ -191,6 +201,20 @@ header nav ul li a:hover {
   margin: 10px;
   padding: 10px;
   color: black;
+}
+
+.flex-contact-right ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items:stretch;
+  align-content: space-between;
+  list-style-type: none;
+}
+
+.flex-contact-right ul li a {
+  max-width: 100%;
+  height: auto;
 }
 
 footer {
