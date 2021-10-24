@@ -23,10 +23,14 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  position: sticky;
-  position: -webkit-sticky;
+  /*position: sticky;
+  position: -webkit-sticky;*/
   top: 0;
-  z-index: 9999;
+  /*z-index: 9999;*/
+  background-image: url('../images/fernand-de-canne-Unl-fQ1_P5Q-unsplash.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  /*background-position: 80%;*/
 }
 
 header h1 {
@@ -162,7 +166,16 @@ header nav ul li a:hover {
 }
 
 .flex-projects-right ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items:stretch;
+  align-content: space-between;
   list-style-type: none;
+}
+
+ .flex-projects-right ul > * {
+   margin: 1em 0;
 }
 
 .flex-projects-right {
@@ -235,4 +248,10 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
   top: 0;
+}
+
+@media screen and (max-width: 575px) {
+  header {
+    justify-content: center;
+  }
 }
