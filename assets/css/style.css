@@ -18,7 +18,6 @@ body {
 /* START - header and header items */
 header {
   padding: 20px 35px;
-  /*background-color: rgb(54, 31, 31);*/
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -38,7 +37,7 @@ header h1 {
 }
 
 header a {
-  text-decoration: none;
+  /*text-decoration: none;*/
   color: var(--primary-color);
 }
 
