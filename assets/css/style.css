@@ -251,4 +251,35 @@ footer {
     justify-content:center;
   }
 }
+
+@media screen and (max-width: 360px) {
+  header {
+    justify-content: center;
+  }
+
+  header h1 {
+    padding-bottom: 5px;
+  }
+
+  header nav {
+    align-items:center;
+    padding-bottom: 0px;
+  }
+
+  hero h1 {
+    justify-content:center;
+  }
+
+  .flex-about-left h2 {
+    padding-right: 5px;
+  }
+
+  .flex-projects-left h2 {
+    padding-right: 5px;
+  }
+
+  .flex-contact-left h2 {
+    padding-right: 5px;
+  }
+}
 /* END - media queries to make site responsive to cell phones */
