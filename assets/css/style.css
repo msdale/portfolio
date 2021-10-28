@@ -211,15 +211,11 @@ header nav ul li a:hover {
 .flex-contact-right ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items:stretch;
-  align-content: space-between;
   list-style-type: none;
 }
 
-.flex-contact-right ul li a {
-  max-width: 100%;
-  height: auto;
+.flex-contact-right ul p {
+  padding-right: 20px;
 }
 
 footer {
@@ -247,27 +243,15 @@ footer {
     padding-bottom: 0px;
   }
 
-  hero h1 {
+  .hero h1 {
     justify-content:center;
+    padding: 200px 20px;
   }
 }
 
 @media screen and (max-width: 360px) {
-  header {
-    justify-content: center;
-  }
-
-  header h1 {
-    padding-bottom: 5px;
-  }
-
-  header nav {
-    align-items:center;
-    padding-bottom: 0px;
-  }
-
-  hero h1 {
-    justify-content:center;
+  header nav ul > * {
+    margin: 0.5em 0;
   }
 
   .flex-about-left h2 {
@@ -282,4 +266,5 @@ footer {
     padding-right: 5px;
   }
 }
+
 /* END - media queries to make site responsive to cell phones */
