@@ -156,6 +156,7 @@ header nav ul li a:hover {
 
 .flex-projects-right h4 {
   max-width: 200px;
+  min-height: 35px;
 }
 
 .flex-projects-right ul {
